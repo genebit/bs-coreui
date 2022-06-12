@@ -23,13 +23,6 @@ $input-btn-focus-width: 0.15 !default;
 $input-btn-focus-color-opacity: 0.15 !default;
 $input-btn-focus-box-shadow: 0 0 0 1px rgba(0, 17, 255, 0.25) !default;
 
-label.btn:active,
-span.btn:active,
-a.btn:active,
-button:active {
-    transform: scale(96%);
-}
-
 $btn-active-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.125) !default;
 
 $btn-border-radius: 5px !default;
@@ -38,4 +31,25 @@ $btn-border-radius-lg: $btn-border-radius !default;
 
 $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, transform 0.1s ease-in-out, box-shadow 0.15s ease-in-out !default;
 
-@import "node_modules/bootstrap/scss/bootstrap.scss";
+$headings-font-weight: 700;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "coreui-layout";
+
+label.btn:active,
+span.btn:active,
+a.btn:active,
+button:active {
+    transform: scale(96%);
+}
+
+.sidebar .nav-item,
+.sidebar .nav-group {
+    padding: 0 1rem;
+    transition: padding 300ms ease-in-out, border-radius 300ms ease-in-out;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-group:hover,
+.sidebar .nav-link.active {
+    border-radius: 6px !important;
+}
