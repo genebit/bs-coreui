@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <title>Demo</title>
+
+        <!-- Vendors styles-->
+        <link rel="stylesheet" href="plugins/simplebar/dist/simplebar.css" />
+
+        <!-- Main styles-->
+        <link rel="stylesheet" href="css/coreui-layout.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/site.css" />
+
+        <!-- Icons: Fontawesome 6 and CoreUI -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link rel="stylesheet" href="plugins/coreui-comp/icons/css/all.min.css" />
+
+        <!-- Jquery -->
+        <script src="plugins/jquery/jquery-3.6.0.min.js"></script>
+
+        <!-- Core UI Scripts -->
+        <script defer src="plugins/coreui-comp/coreui/dist/js/coreui.bundle.js"></script>
+        <script defer src="plugins/simplebar/dist/simplebar.min.js"></script>
+        <script defer src="plugins/coreui-comp/utils/dist/coreui-utils.js"></script>
+
+        <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script defer src="site.js" type="module"></script>
+    </head>
+    <body>
+        <div class="sidebar sidebar-dark sidebar-fixed min-vh-100" id="sidebar">
+            <div class="sidebar-brand d-none d-md-flex">
+                <img class="sidebar-brand-full" src="assets/svg/icon-logo-full.svg" alt="" />
+                <img class="sidebar-brand-narrow" src="assets/svg/icon-logo-narrow.svg" alt="" />
+            </div>
+            <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+                <li class="nav-title">MAIN NAVIGATION</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <i class="nav-icon cil-gauge"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-title">TITLE 1</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="nav-icon cil-user"></i>
+                        Employees
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="nav-icon cil-building"></i>
+                        Department
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="nav-icon cil-location-pin"></i>
+                        Designation
+                    </a>
+                </li>
+                <li class="nav-title">TITLE 2</li>
+                <li class="nav-group">
+                    <a class="nav-link nav-group-toggle" href="#">
+                        <i class="nav-icon cil-filter"></i>
+                        Miscellaneous
+                    </a>
+                    <ul class="nav-group-items">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Option A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Option B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Option C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Option D</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-title">TITLE 3</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="nav-icon cil-double-quote-sans-left"></i>
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="nav-icon cil-address-book"></i>
+                        Contacts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="nav-icon cil-book"></i>
+                        Resources
+                    </a>
+                </li>
+            </ul>
+            <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+        </div>
+        <div class="wrapper d-flex flex-column bg-light">
+            <header class="header header-sticky mb-4 shadow-sm">
+                <div class="container-fluid">
+                    <button class="header-toggler" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+                        <i class="cil-hamburger-menu"></i>
+                    </button>
+                    <a class="header-brand" href="#"></a>
+                    <ul class="header-nav d-md-flex">
+                        <li class="nav-item">
+                            <input class="form-control" type="search" placeholder="Search" />
+                        </li>
+                    </ul>
+                    <ul class="header-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="icon icon-lg cil-bell"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header-nav ms-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                <div class="avatar">
+                                    <img class="avatar-img" src="assets/avatars/user1.PNG" alt="" />
+                                </div>
+                                <span>Bruno Nash</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end pt-0">
+                                <div class="dropdown-header bg-light py-2">
+                                    <div class="fw-semibold">Account</div>
+                                </div>
+                                <a class="dropdown-item" href="#"> Updates<span class="badge badge-sm bg-info ms-2">42</span></a>
+                                <a class="dropdown-item" href="#"> Messages<span class="badge badge-sm bg-success ms-2">42</span></a>
+                                <a class="dropdown-item" href="#"> Tasks<span class="badge badge-sm bg-danger ms-2">42</span></a>
+                                <a class="dropdown-item" href="#"> Comments<span class="badge badge-sm bg-warning ms-2">42</span></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"> Lock Account</a><a class="dropdown-item" href="#"> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-divider"></div>
+                <div class="container-fluid">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb my-0 ms-2">
+                            <li class="breadcrumb-item small">Home</li>
+                            <li class="breadcrumb-item active small">Dashboard</li>
+                        </ol>
+                    </nav>
+                </div>
+            </header>
+            <main class="main w-100">
+                <div class="container min-vh-100">
+                    <div include-html="components.html"></div>
+                </div>
+                <div class="container mt-5">
+                    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                        <div class="row">
+                            <div class="col-12 col-md">
+                                <img style="max-width: 20rem" src="assets/svg/icon-logo-full-black.svg" alt="Developer Logo" />
+                                <small class="d-block my-3 text-muted"
+                                    >Copyright © 2022 Gene Bitara (genebit).<br />
+                                    All Rights Reserved
+                                </small>
+                            </div>
+                            <div class="col-6 mt-3 col-md">
+                                <h5>Project Resources</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">ASP.NET MVC Framework</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Figma</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Jquery Plugins</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 mt-3 col-md">
+                                <h5>Socials</h5>
+                                <div class="d-flex gap-3">
+                                    <a class="text-decoration-none" href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+                                    <a class="text-decoration-none" href=""><i class="fa-brands fa-github"></i> Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
