@@ -7,3 +7,12 @@ $(".sidebar-toggler, .header-toggler").click(function () {
         $(".sidebar .nav-item, .sidebar .nav-group").css("border-radius", "6px")
     }
 })
+
+$(".btn").click(function () {
+    $(this).append("<span></span>")
+
+    var span = $(this).find("span")
+    setTimeout(function () {
+        span.remove()
+    }, 2000)
+})
