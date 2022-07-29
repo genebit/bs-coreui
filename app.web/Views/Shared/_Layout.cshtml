@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Html.Partial("_HeadTags")
+
+    <style type="text/css">
+        * {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    @Html.Partial("_Sidebar")
+    <div class="wrapper d-flex flex-column bg-light">
+        @Html.Partial("_Header")
+        <main class="main w-100">
+            <div class="container min-vh-100">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+    @Html.Partial("_Footer")
+</body>
+</html>

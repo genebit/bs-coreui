@@ -1,0 +1,248 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="d-flex justify-content-center">
+    <header class="mt-5 pt-5">
+        <h1 class="fs-1 text-center">Bootstrap 5 + CoreUI 4</h1>
+        <p class="lead">A customizable css framework combining the power of BS5 with CoreUI suited for all web designs!</p>
+        <div class="w-100 text-center">
+            <button class="btn btn-lg btn-primary text-white">Get Started!</button>
+        </div>
+    </header>
+
+
+    @*<section>
+            <h3>TYPOGRAPHY</h3>
+            <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>H1</h1>
+                    <h2>H2</h2>
+                    <h3>H3</h3>
+                    <h4>H4</h4>
+                    <h5>H5</h5>
+                    <h6>H6</h6>
+                </div>
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam explicabo numquam maiores facilis quo exercitationem, harum dolorem quibusdam, impedit facere laborum aspernatur debitis est officiis, doloremque alias perferendis fuga nobis.</p>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quas omnis ut illo reiciendis? Optio quia enim nihil expedita fugiat praesentium sapiente blanditiis, minus quidem!</small>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 pt-5">
+            <h3>BUTTONS</h3>
+            <hr />
+            <div class="row my-4">
+                <div class="col-md-12">
+                    <h5>Colors</h5>
+                    <button type="button" class="btn btn-primary text-white">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success text-white">Success</button>
+                    <button type="button" class="btn btn-danger text-white">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-md-12">
+                    <h5>Button Outline</h5>
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary text-dark">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <h5>Different Tags</h5>
+                    <button type="button" class="btn btn-primary text-white">Button</button>
+                    <a type="button" class="btn btn-primary text-white">Link</a>
+                    <span type="button" class="btn btn-primary text-white">Span</span>
+                    <label type="button" class="btn btn-primary text-white">Label</label>
+                </div>
+                <div class="col-md-4">
+                    <h5>Disabled</h5>
+                    <button type="button" class="btn btn-sm btn-primary text-white" disabled>Button</button>
+                    <button type="button" class="btn btn-primary text-white" disabled>Button</button>
+                    <button type="button" class="btn btn-lg btn-primary text-white" disabled>Button</button>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sizes</h5>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-primary text-white">Small</button>
+                        <button type="button" class="btn btn-primary text-white">Default</button>
+                        <button type="button" class="btn btn-lg btn-primary text-white">Large</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 pt-5">
+            <h3>FORMS</h3>
+            <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="alert alert-danger px-4" role="alert">
+                        <i class="fa-solid fa-times-circle fs-5 me-3 text-danger"></i>
+                        This is a danger alert! My job is to inform users about unsuccessful events!
+                    </div>
+
+                    <div class="card shadow-sm bg-white">
+                        <div class="card-body">
+                            <form class="d-flex flex-column gap-3">
+                                <h5>Register as a New User</h5>
+                                <input field class="form-control bg-light" type="text" name="Username" placeholder="Username" />
+                                <input field class="form-control bg-light is-invalid" type="email" name="Email" placeholder="Email" />
+                                <input field class="form-control bg-light is-invalid" type="password" name="Password" placeholder="Password" />
+                                <input field class="form-control bg-light" type="password" name="ConfirmPassword" placeholder="Confirm Password" />
+                                <select field class="form-select" name="Gender">
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select>
+                                <div>
+                                    <input field type="checkbox" id="RememberMe" name="RememberMe" placeholder="Checkbox" />
+                                    <label for="RememberMe">Remember me?</label>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-primary" type="reset">Reset!</button>
+                                    <button class="btn btn-primary text-white" type="button" onclick="submitForm(this, true)">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-success px-4" role="alert">
+                        <i class="fa-solid fa-check-circle me-3 fs-5 text-success"></i>
+                        This is a success alert! My job is to inform users about successful event!
+                    </div>
+                    <div class="alert alert-dark px-4" role="alert">
+                        <i class="fa-solid fa-info-circle me-3 fs-5"></i>
+                        This is a dark alert! My job is to inform users about everything!
+                    </div>
+                    <div class="alert alert-info px-4" role="alert">
+                        <i class="fa-solid fa-info-circle me-3 fs-5"></i>
+                        This is an info alert! My job is to inform users about everything!
+                    </div>
+                    <div class="alert alert-primary px-4" role="alert">
+                        <i class="fa-solid fa-info-circle me-3 fs-5"></i>
+                        This is a primary alert! My job is to inform users about everything!
+                    </div>
+                    <div class="alert alert-warning px-4" role="alert">
+                        <i class="fa-solid fa-warning me-3 fs-5"></i>
+                        This is a warning alert! My job is to inform warn users about everything!
+                    </div>
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <form class="d-flex flex-column gap-3">
+                                <div id="radioWrapper">
+                                    <h5>Select among the choices</h5>
+                                    <div>
+                                        <input type="radio" id="pizza" name="BestFood" value="Pizza" />
+                                        <label for="pizza">Pizza</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="carbonara" name="BestFood" value="Carbonara" />
+                                        <label for="carbonara">Carbonara</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="borgor" name="BestFood" value="Borgor" />
+                                        <label for="borgor">Borgor</label>
+                                    </div>
+                                    <input field type="hidden" id="selectedRadio" />
+                                </div>
+                                <div class="form-floating">
+                                    <textarea field class="form-control bg-light h-100" placeholder="Leave a Comment here" id="floatingTextarea" name="Comment" rows="10"></textarea>
+                                    <label for="floatingTextarea">Leave a Comment here</label>
+                                </div>
+                                <div>
+                                    <button class="btn btn-secondary shadow-none" type="reset">Cancel</button>
+                                    <button class="btn btn-primary text-white" type="button" onclick="submitForm(this, true)">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 pt-5">
+            <table class="table table-borderless table-hover w-100" id="DemoTbl">
+                <thead>
+                <th>Nickname</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Contact Number</th>
+                <th>Position</th>
+                <th>Email Address</th>
+                <th>Options</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gene</td>
+                        <td>Johcel Gene</td>
+                        <td>Bitara</td>
+                        <td>0970 322 4661</td>
+                        <td>Software Engineer</td>
+                        <td>gene@gmail.com</td>
+                        <td class="text-center">
+                            <div class="d-flex gap-3">
+                                <i class="fa-solid fa-info small"></i>
+                                <i class="fa-solid fa-edit small"></i>
+                                <i class="fa-solid fa-trash text-danger small"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Axel</td>
+                        <td>John Axel</td>
+                        <td>Bitara</td>
+                        <td>0934 441 6591</td>
+                        <td>Employee</td>
+                        <td>johnaxel@gmail.com</td>
+                        <td class="text-center">
+                            <div class="d-flex gap-3">
+                                <i class="fa-solid fa-info small"></i>
+                                <i class="fa-solid fa-edit small"></i>
+                                <i class="fa-solid fa-trash text-danger small"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>*@
+</div>
+
+<section class="mt-5 pt-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <h2>
+                <i class="fa-solid fa-mobile-screen"></i>
+                Responsive
+            </h2>
+            <p>
+                Mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <h2>
+                <i class="fa-solid fa-gear"></i>
+                Customizable
+            </h2>
+            <p>This project is built solely to be easily customizable using SASS. Configure your own styles to its config and compile!</p>
+        </div>
+        <div class="col-lg-4">
+            <h2>
+                <i class="fa-brands fa-dochub"></i>
+            Documentation</h2>
+            <p>
+                Mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+            </p>
+        </div>
+    </div>
+</section>
