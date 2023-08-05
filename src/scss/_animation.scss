@@ -5,7 +5,7 @@
 	}
 }
 
-@keyframes slideIn {
+@keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}
@@ -15,6 +15,6 @@
 	}
 }
 
-.slide-in {
-	animation-name: slideIn;
+.fade-in {
+	animation-name: fadeIn;
 }
